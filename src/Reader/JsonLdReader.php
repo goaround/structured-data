@@ -92,7 +92,15 @@ class JsonLdReader implements Reader
 
         if (is_object($data)) {
             if (isset($data->{'@graph'}) && is_array($data->{'@graph'})) {
+                $context = $data->{'@context'} ?? null;
                 $data = $data->{'@graph'};
+                if($context) {
+                   foreach($data as $i => $item) {
+                      if($context && !($item->{'@context'} ?? null)) {
+                         $data[$i]->{'@context'} = $context;
+                      }
+                   }
+                }
             } else {
                 $item = $this->readItem($data, $url, null);
 

@@ -10,6 +10,7 @@ but may be used with other vocabularies.
 [![Build Status](https://github.com/brick/structured-data/workflows/CI/badge.svg)](https://github.com/brick/structured-data/actions)
 [![Coverage Status](https://coveralls.io/repos/github/brick/structured-data/badge.svg?branch=master)](https://coveralls.io/github/brick/structured-data?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/brick/structured-data/v/stable)](https://packagist.org/packages/brick/structured-data)
+[![Total Downloads](https://poser.pugx.org/brick/structured-data/downloads)](https://packagist.org/packages/brick/structured-data)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
 
 ### Installation
@@ -22,7 +23,7 @@ composer require brick/structured-data
 
 ### Requirements
 
-This library requires PHP 7.2 or later. It makes use of the following extensions:
+This library requires PHP 8.1 or later. It makes use of the following extensions:
 
 - [dom](https://www.php.net/manual/en/book.dom.php)
 - [json](https://www.php.net/manual/en/book.json.php)
@@ -39,7 +40,7 @@ optimizing existing code, etc.), `y` is incremented.
 
 **When a breaking change is introduced, a new `0.x` version cycle is always started.**
 
-It is therefore safe to lock your project to a given release cycle, such as `0.1.*`.
+It is therefore safe to lock your project to a given release cycle, such as `0.2.*`.
 
 If you need to upgrade to a newer release cycle, check the [release history](https://github.com/brick/structured-data/releases)
 for a list of changes introduced by each further `0.x.0` version.
